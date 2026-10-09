@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Детейлинг-студия · Алматы</title>
+  <meta name="description" content="Детейлинг-мойка, полировка кузова, керамическое покрытие и химчистка салона в Алматы.">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0a'/%3E%3Crect x='9' y='9' width='14' height='14' fill='none' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============================== HEADER ============================== -->
+<header class="hdr" id="hdr">
+  <a class="logo" href="#top" aria-label="На главную">
+    <span class="logo-mark" data-brand="name">NOIR</span>
+    <span class="logo-suffix" data-brand="suffix">DETAILING</span>
+  </a>
+  <nav class="nav" id="nav">
+    <a href="#services">Услуги</a>
+    <a href="#works">Работы</a>
+    <a href="#process">Процесс</a>
+    <a href="#price">Стоимость</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+  <a class="btn btn-sm hdr-cta" href="#book">Записаться</a>
+  <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><i></i><i></i></button>
+</header>
+
+<main id="top">
+
+<!-- =============================== HERO =============================== -->
+<section class="hero">
+  <div class="hero-img"><img id="heroImg" alt="Чёрный автомобиль в студийном свете" fetchpriority="high"></div>
+  <div class="hero-meta mono">
+    <span>Vol. 01</span>
+    <span data-brand="city">Алматы</span>
+    <span>Осень <span data-brand="since">2026</span></span>
+  </div>
+  <div class="hero-body">
+    <p class="eyebrow mono" data-brand="tagline">Детейлинг-студия · Алматы</p>
+    <h1 class="hero-title">
+      <span class="line"><span>Блеск,</span></span>
+      <span class="line"><span>который <em>остаётся.</em></span></span>
+    </h1>
+    <div class="hero-foot">
+      <p class="hero-lead">Мойка, полировка, керамика и химчистка салона. Ручная работа, замер каждого элемента и результат, который видно под любым светом.</p>
+      <div class="hero-actions">
+        <a class="btn btn-light" href="#book">Записаться на осмотр</a>
+        <a class="link-arrow light" href="#works">Смотреть работы <span>→</span></a>
+      </div>
+    </div>
+  </div>
+  <a class="hero-scroll mono" href="#services" aria-label="Листать вниз">Scroll</a>
+</section>
+
+<!-- ============================ MARQUEE ================================ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marquee"></div>
+</div>
+
+<!-- ============================ INTRO ================================== -->
+<section class="intro wrap">
+  <p class="intro-text reveal">
+    Мы относимся к автомобилю как к <em>предмету дизайна</em>. Поэтому не торопимся,
+    не работаем на потоке и показываем результат под инспекционным светом — до того, как отдать ключи.
+  </p>
+  <div class="facts reveal">
+    <div><b data-count="9">9</b><span>H — твёрдость керамики</span></div>
+    <div><b data-count="5">5</b><span>лет защиты лака</span></div>
+    <div><b data-count="3">3</b><span>этапа полировки</span></div>
+    <div><b data-count="100">100</b><span>% ручной работы</span></div>
+  </div>
+</section>
+
+<!-- ============================ SERVICES =============================== -->
+<section class="services" id="services">
+  <div class="wrap sec-head">
+    <span class="sec-no mono">— Направления</span>
+    <h2 class="sec-title">Четыре услуги.<br><em>Одна планка качества.</em></h2>
+  </div>
+  <div class="svc-tabs wrap" id="svcTabs" role="tablist"></div>
+  <div id="svcList"></div>
+</section>
+
+<!-- ============================ WORKS ================================== -->
+<section class="works" id="works">
+  <div class="wrap sec-head row">
+    <div>
+      <span class="sec-no mono">— Гараж работ</span>
+      <h2 class="sec-title">Машины, которые<br><em>прошли через бокс.</em></h2>
+    </div>
+    <p class="sec-aside">Нажмите на автомобиль, чтобы открыть страницу работы: галерея, что делали, сколько времени заняло и замеры.</p>
+  </div>
+  <div class="wrap filters" id="filters"></div>
+  <div class="wrap grid-cars" id="cars"></div>
+</section>
+
+<!-- ============================ PROCESS ================================ -->
+<section class="process dark" id="process">
+  <div class="wrap sec-head">
+    <span class="sec-no mono">— Как мы работаем</span>
+    <h2 class="sec-title">Пять шагов<br><em>от осмотра до выдачи.</em></h2>
+  </div>
+  <ol class="wrap steps">
+    <li class="reveal"><span class="mono">01</span><h3>Осмотр</h3><p>Смотрим машину под светом, замеряем толщину ЛКП, фиксируем дефекты на фото.</p></li>
+    <li class="reveal"><span class="mono">02</span><h3>Смета</h3><p>Предлагаем программу работ и точную стоимость. Без «доплат по факту».</p></li>
+    <li class="reveal"><span class="mono">03</span><h3>Работа</h3><p>Чистый бокс, контролируемая температура, профессиональные материалы.</p></li>
+    <li class="reveal"><span class="mono">04</span><h3>Контроль</h3><p>Проверяем каждый элемент под инспекционными лампами разной цветовой температуры.</p></li>
+    <li class="reveal"><span class="mono">05</span><h3>Выдача</h3><p>Показываем результат, выдаём паспорт покрытия и рекомендации по уходу.</p></li>
+  </ol>
+</section>
+
+<!-- ============================ PRICE ================================== -->
+<section class="price" id="price">
+  <div class="wrap sec-head">
+    <span class="sec-no mono">— Стоимость</span>
+    <h2 class="sec-title">Рассчитайте<br><em>за 10 секунд.</em></h2>
+  </div>
+  <div class="wrap calc">
+    <div class="calc-form">
+      <fieldset>
+        <legend class="mono">01 · Класс автомобиля</legend>
+        <div class="chips" id="calcClass"></div>
+      </fieldset>
+      <fieldset>
+        <legend class="mono">02 · Услуги</legend>
+        <div class="checks" id="calcSvc"></div>
+      </fieldset>
+      <fieldset id="ceramicField">
+        <legend class="mono">03 · Керамика</legend>
+        <div class="chips" id="calcCer"></div>
+      </fieldset>
+    </div>
+    <aside class="calc-out">
+      <span class="mono muted">Ориентировочно</span>
+      <div class="calc-total"><span id="calcTotal">0</span><small>₸</small></div>
+      <div class="calc-time mono" id="calcTime">—</div>
+      <ul class="calc-lines" id="calcLines"></ul>
+      <a class="btn btn-light btn-block" href="#book" id="calcBook">Записаться с этим расчётом</a>
+      <p class="calc-note">Точная цена — после осмотра. Скидка 10 % на комплекс из трёх услуг.</p>
+    </aside>
+  </div>
+</section>
+
+<!-- ============================ FAQ ==================================== -->
+<section class="faq wrap">
+  <div class="sec-head">
+    <span class="sec-no mono">— Вопросы</span>
+    <h2 class="sec-title">Коротко<br><em>о главном.</em></h2>
+  </div>
+  <div class="faq-list" id="faq"></div>
+</section>
+
+<!-- ============================ BOOK =================================== -->
+<section class="book dark" id="book">
+  <div class="wrap book-grid">
+    <div>
+      <span class="sec-no mono">— Запись</span>
+      <h2 class="sec-title">Привозите<br><em>на осмотр.</em></h2>
+      <p class="book-lead">Осмотр и замер ЛКП — бесплатно. Перезвоним в течение 15 минут в рабочее время.</p>
+      <div class="book-contacts">
+        <a href="#" data-brand-href="tel"><span class="mono">Телефон</span><b data-brand="phone"></b></a>
+        <a href="#" data-brand-href="wa" target="_blank" rel="noopener"><span class="mono">WhatsApp</span><b>Написать →</b></a>
+      </div>
+    </div>
+    <form class="form" id="form" novalidate>
+      <label class="field"><span>Имя</span><input name="name" autocomplete="name" required placeholder="Как к вам обращаться"></label>
+      <label class="field"><span>Телефон</span><input name="phone" type="tel" autocomplete="tel" required placeholder="+7 7__ ___ __ __"></label>
+      <label class="field"><span>Автомобиль</span><input name="car" placeholder="Марка, модель, год"></label>
+      <div class="field"><span>Что интересует</span><div class="checks small" id="formSvc"></div></div>
+      <label class="field"><span>Комментарий</span><textarea name="note" rows="3" placeholder="Например: убрать царапины на капоте"></textarea></label>
+      <button class="btn btn-light btn-block" type="submit">Отправить заявку</button>
+      <p class="form-note">Демо-форма: данные никуда не отправляются.</p>
+      <div class="form-ok" id="formOk" hidden>
+        <b>Заявка принята.</b>
+        <p>В рабочей версии она придёт менеджеру. Пока можно продублировать в WhatsApp:</p>
+        <a class="btn btn-light" id="formWa" target="_blank" rel="noopener">Открыть WhatsApp</a>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================ FOOTER ================================= -->
+<footer class="ftr" id="contacts">
+  <div class="wrap ftr-grid">
+    <div><span class="mono muted">Адрес</span><p data-brand="address"></p><small data-brand="addressNote"></small></div>
+    <div><span class="mono muted">Часы</span><p data-brand="hours"></p></div>
+    <div><span class="mono muted">Связь</span><p><a data-brand-href="tel" data-brand="phone"></a><br><a data-brand-href="mail" data-brand="email"></a></p></div>
+    <div><span class="mono muted">Соцсети</span><p><a data-brand-href="ig" target="_blank" rel="noopener">Instagram</a><br><a data-brand-href="tg" target="_blank" rel="noopener">Telegram</a><br><a data-brand-href="map" target="_blank" rel="noopener">Открыть в 2ГИС</a></p></div>
+  </div>
+  <div class="ftr-word" aria-hidden="true" data-brand="name">NOIR</div>
+  <div class="wrap ftr-bottom mono">
+    <span>© <span data-brand="since"></span> <span data-brand="name"></span> <span data-brand="suffix"></span></span>
+    <span>Концепт сайта · фото: Unsplash</span>
+  </div>
+</footer>
+
+<!-- ============================ CAR PAGE =============================== -->
+<div class="car-page" id="carPage" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Страница работы">
+  <div class="car-bar">
+    <button class="car-back" id="carBack"><span>←</span> Все работы</button>
+    <span class="car-bar-title mono" id="carBarTitle"></span>
+    <div class="car-nav"><button id="carPrev" aria-label="Предыдущая работа">←</button><button id="carNext" aria-label="Следующая работа">→</button></div>
+  </div>
+  <div class="car-scroll" id="carScroll"></div>
+</div>
+
+<!-- ============================ LIGHTBOX =============================== -->
+<div class="lb" id="lb" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Просмотр фото">
+  <button class="lb-x" id="lbX" aria-label="Закрыть">×</button>
+  <button class="lb-arr lb-prev" id="lbPrev" aria-label="Предыдущее">←</button>
+  <figure><img id="lbImg" alt=""><figcaption class="mono" id="lbCap"></figcaption></figure>
+  <button class="lb-arr lb-next" id="lbNext" aria-label="Следующее">→</button>
+</div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
