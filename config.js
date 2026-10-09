@@ -12,11 +12,11 @@ window.BRAND = {
   tagline: "Детейлинг-студия · Алматы",
   city: "Алматы",
   since: "2026",
-  phone: "+7 700 000 00 00",    // демо-номер
-  whatsapp: "77000000000",      // без «+», для ссылки wa.me
+  phone: "+7 705 985 89 10",
+  whatsapp: "77059858910",      // без «+», для ссылки wa.me
   instagram: "noir.detailing",
   telegram: "noirdetailing",
-  email: "hello@noir-detailing.kz",
+  email: "999azazun@gmail.com",
   address: "Алматы, Бостандыкский район",
   addressNote: "Точный адрес — после подтверждения записи",
   hours: "Ежедневно 09:00 — 21:00",
